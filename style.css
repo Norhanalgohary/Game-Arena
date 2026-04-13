@@ -1,0 +1,135 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   font-family: "Chakra Petch", sans-serif;
+}
+nav{
+    background-color: #0B0E13;
+}
+.name{
+    font-weight: 700;
+    font-size:20px ;
+    color: #CBFE1C;
+    /* padding-left: 20px; */
+    text-decoration: none;
+}
+.container-fluid{
+    /* width: 80%;
+    margin: auto; */
+    padding: 0;
+   /* height: auto; */
+    
+}
+.nav-ul{
+    border-bottom: 1px solid rgba(181, 179, 179, 0.842);
+}
+.nav-items li{
+     font-weight: 400;
+    font-size:16px ;
+    padding-inline: 10px;
+    padding-bottom: 20px;
+}
+.nav-items a:hover{
+    color: #CBFE1C;
+}
+.nav-items a{
+    color: white; 
+}
+.active-home a{
+  color: #CBFE1C;
+}
+.nav-items i{
+    color: white;
+    /* padding-inline: 5px; */
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    padding-block: 10px;
+}
+.nav-items i:hover{
+    color: #CBFE1C;
+}
+.btn-bg{
+    background-color:#CBFE1C ;
+     color: rgb(0, 0, 0);
+     /* margin-right: 30px; */
+     font-weight: 700;
+    font-size:16px ;
+    /* padding-inline: 20px; */
+    width: 100%;
+}
+.btn-bg:hover{
+  background-color:  #c9fe1cac;
+}
+/* .nav-icon{
+    display: flex;
+    align-items: center;
+} */
+span{
+    margin-left: 10px;
+    margin-top: 15px;
+     font-weight: 400;
+    font-size:14px ;
+     font-family: "Chakra Petch", sans-serif;
+    color: white;
+}
+.nav-items span:hover{
+    color: #CBFE1C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:992px){
+    .container-fluid{
+    width: 80%;
+    margin: auto;
+  
+}
+.nav-items i{
+    color: white;
+    padding-inline: 5px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.btn-bg{
+    background-color:#CBFE1C ;
+     color: rgb(0, 0, 0);
+     margin-right: 30px;
+     font-weight: 700;
+    font-size:16px ;
+    padding-inline: 20px;
+    width: auto;
+    
+}
+span{
+    visibility: hidden;
+}
+
+.nav-ul{
+    border-bottom: 0px solid rgba(181, 179, 179, 0.842);
+    margin-top: 15px;
+  
+}
+.nav-items li{
+     font-weight: 400;
+    font-size:16px ;
+    padding-inline: 10px;
+    /* padding-bottom: 20px; */
+}
+}
