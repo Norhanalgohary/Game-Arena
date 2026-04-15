@@ -6,67 +6,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Arena</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Days+One&family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome-free-7.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid ">
+                <a class=" name" href="#"> <i class="fa-solid fa-gamepad fa-l" style="color: #CBFE1C;"></i>
+                    GameArena</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation text-light">
+                    <i class="fa-solid fa-bars bars"></i>
+                </button>
+                <div class="collapse navbar-collapse nav-items " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto pt-3 mb-lg-0 nav-ul">
+                        <li class="nav-item active-home">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                OUR GAMES
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">
+                                What We Do
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                CONTACT US
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="fa-regular fa-bell space pt-3"><span>Notifications</span></i>
+                    <i class="fa-regular fa-message space pt-3"><span>Messages</span></i>
+                    <button class="btn btn-bg px-6 py-2" type="submit">Sign In</button>
 
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid ">
-           <a class=" name" href="#"> <i class="fa-solid fa-gamepad fa-l" style="color: #CBFE1C;"></i> GameArena</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" >
-                <span class="navbar-toggler-icon" ></span>
-            </button>
-            <div class="collapse navbar-collapse nav-items" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-ul">
-                    <li class="nav-item active-home">
-                        <a class="nav-link " aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            OUR GAMES
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="#">
-                            What We Do
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ">Our Team</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            CONTACT US
-                        </a>
-                    </li>
-                </ul>
-                <!-- <div class="nav-icons">
-                    <div class="nav-icon"><i class="fa-regular fa-bell"></i><p>Notifications</p></div>
-                <div class="nav-icon"><i class="fa-regular fa-message"></i><p>Messages</p></div>
-            </div> -->
-            <i class="fa-regular fa-bell space"><span>Notifications</span></i>
-             <i class="fa-regular fa-message space"><span>Messages</span></i>
-                    <button class="btn btn-bg" type="submit">Sign In</button>
-                
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+
+        <header id="#home" class=" py-5 px-5">
+            <div class="container py-5 my-5  ">
+                <div class="row text-center  ">
+                    <div class="header-content col-lg-5 text-start ">
+                        <h1>THE ULTIMATE
+                            <div style="color: #CBFE1C;">GAMING</div>
+                            EXPERIENCE
+                        </h1>
+                        <p class="py-4">Join millions of gamers worldwide in the most competitive eSports tournaments.
+                            Experience next-level
+                            gaming with cutting-edge technology and endless possibilities.</p>
+                        <div class="header-buttons">
+                            <button type="button" class="btn btn1 col-md-4 p-3 me-2 "
+                                style="background-color: #CBFE1C;">Start Gaming Now</button>
+                            <button type="button" class="btn  btn2 col-md-4 p-2
+                    py-3" style="color: #CBFE1C; border: #CBFE1C 2px solid;">Watch Tournaments</button>
+                        </div>
+                    </div>
+                    <div class="header-img col-lg-5 offset-1 position-relative">
+                        <img src="imgs/hero-img.png" alt="">
+                        <div class="hero-img-span position-absolute p-4">
+                            <i class="fa-solid fa-trophy fa-lg pb-2" style="color: #CBFE1C;"></i>
+                            <div class="hero-img-span-h">
+                                <h6>Active Players</h6>
+                                <h4>2.5M+</h4>
+                            </div>
+                        </div>
+                    </div>
 
 
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <section>
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6  col-md-12 col-sm-12 col-xs-12 ">
+  <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+  </div>
+  <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-xs-12">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-xs-12">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-xs-12">
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-xs-12">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-xs-12">
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, sequi?</p>
+  </div>
+</div>
+
+        <form class="col-lg-6 col-md-12 col-sm-12 col-xs-12 g-3">
+            <div class="row g-5">
+  <div class="col-md-6 col-sm-12">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12 col-sm-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12 col-sm-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-12 col-sm-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-12 col-sm-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <button type="submit" class="btn btn-primary w-100">Sign in</button>
+  </div>
+  </div>
+</form>
+</div>
+</div>
+    </section>
 
 
 
     <div id="footer">
-        <div class="container">
-            <div class="content">
-                <div class="footer-info  f">
+        <div class="container ">
+  <div class="row content  ">
+                <div class="footer-info  f col-sm-6 col-md-6 col-lg-3">
                    <a class=" name name-f" href="#"> <i class="fa-solid fa-gamepad fa-l" style="color: #CBFE1C;"></i> GameArena</a>
                     <p>The ultimate destination for competitive gaming, esports tournaments, and gaming community.</p>
                      <a href="twitter" class="social"><i class="fa-brands fa-x-twitter fa-lg" style="color: rgb(185, 185, 185);"></i></a>
@@ -76,7 +180,7 @@
                     <a href="twitch"  class="social"><i class="fa-brands fa-twitch fa-lg" style="color: rgb(185, 185, 185);"></i></a>
                 </div>
 
-                <div class="quick-links f">
+                <div class="quick-links f col-sm-6 col-md-6 col-lg-3">
                     <h3>Games</h3>
                     <a href="" target="_blank">VALORANT</a>
                     <a href="" target="_blank">League of Legends</a>
@@ -85,7 +189,7 @@
                     <a href="" target="_blank">Apex Legends</a>
                 </div>
           
-                <div class="quick-links f">
+                <div class="quick-links f col-sm-6 col-md-6 col-lg-3">
                     <h3>Tournaments</h3>
                     <a href="" target="_blank">Upcoming Events</a>
                     <a href="" target="_blank">Live Matches</a>
@@ -93,7 +197,7 @@
                     <a href="" target="_blank">Rankings</a>
                     <a href="" target="_blank">Schedule</a>
                 </div>
-                <div class="quick-links f">
+                <div class="quick-links f col-sm-6 col-md-6  col-lg-3">
                     <h3>Support</h3>
                     <a href="" target="_blank">Help Center</a>
                     <a href="" target="_blank">Contact Us</a>
@@ -103,7 +207,7 @@
                 </div>
             </div>
             <div class="clr-fix"></div>
-            
+        
             <div class="copyright">
                 <div class="copy">
                     <p>© 2025 GameArena. All rights reserved.</p>
@@ -118,7 +222,7 @@
             </div>
         </div>
     </div>
-  
+
 
 
 

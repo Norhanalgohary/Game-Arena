@@ -1,16 +1,27 @@
 body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Chakra Petch", sans-serif;
 }
+
 .clr-fix {
     clear: both;
 }
-h1{
+
+h1,
+h5,
+h6 {
     margin: 0;
 }
 
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.888), rgba(0, 0, 0, 0.888)), url("imgs/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ---------------------------------------nav css------------------------------------------ */
 nav {
     background-color: #0B0E13;
 }
@@ -19,16 +30,12 @@ nav {
     font-weight: 700;
     font-size: 20px;
     color: #CBFE1C;
-    /* padding-left: 20px; */
     text-decoration: none;
+    margin-left: 15px;
 }
 
 .container-fluid {
-    /* width: 80%;
-    margin: auto; */
     padding: 0;
-    /* height: auto; */
-
 }
 
 .nav-ul {
@@ -56,7 +63,6 @@ nav {
 
 .nav-items i {
     color: white;
-    /* padding-inline: 5px; */
     font-size: 16px;
     display: block;
     margin-bottom: 5px;
@@ -70,10 +76,8 @@ nav {
 .btn-bg {
     background-color: #CBFE1C;
     color: rgb(0, 0, 0);
-    /* margin-right: 30px; */
     font-weight: 700;
     font-size: 16px;
-    /* padding-inline: 20px; */
     width: 100%;
 }
 
@@ -98,37 +102,31 @@ span {
     color: #CBFE1C;
 }
 
-#footer {
-    background-color: #0B0E13; 
-    margin-top: 100px;
-     /* height: auto; */
-    
+.bars {
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
 }
+
+.bars:hover {
+    color: #CBFE1C;
+}
+
+/* ---------------------------------------footer css------------------------------------------ */
+#footer {
+    background-color: #0B0E13;
+    margin-top: 100px;
+}
+
 #footer .container {
     padding-block: 70px;
-    margin: auto;
-    /* width: 100%; */
 }
-/* 
-.f {
-   width: 50%;
-} */
-/* .content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
 
 .footer-info {
-    width: 25%;
     text-align: left;
     padding-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 15px;
 }
 
 .footer-info .name-f {
-
     font-weight: 700;
     font-size: 20px;
 }
@@ -141,15 +139,13 @@ span {
     margin-bottom: 20px;
 }
 
-.social {
+/* .social {
     margin-right: 10px;
 }
-
 .quick-links {
     padding-left: 20px;
     margin-left: 15px;
-}
-
+} */
 .quick-links h3 {
     color: white;
     padding-bottom: 20px;
@@ -178,6 +174,7 @@ span {
     font-size: 16px;
     color: oklch(0.707 0.022 261.325);
 }
+
 .footer-copyrights {
     border-top: 1px solid gainsboro;
     width: 95%;
@@ -201,6 +198,159 @@ span {
     text-decoration: none;
 }
 
+/* ---------------------------------------header css------------------------------------------ */
+@media screen and (max-width:639px) {
+
+    .header-content {
+        h1 {
+            font-weight: 700;
+            font-size: 45px;
+            font-family: "Days One", sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+        }
+
+        button {
+            font-weight: 700;
+            font-size: 16px;
+            /* margin-left: 55px; */
+            width: 100%;
+            height: auto;
+        }
+
+        .btn1 {
+            margin-bottom: 10px;
+        }
+
+        .btn2 {
+            margin-bottom: 50px;
+        }
+
+    }
+
+    .header-img {
+        margin-left: 0;
+        height: 400px;
+        width: 600px;
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            border: 5px solid #CBFE1C;
+        }
+
+        .hero-img-span {
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            background-color: #0B0E13;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            text-align: left;
+            bottom: -30px;
+            left: -30px;
+        }
+
+        .hero-img-span-h {
+            margin-left: 10px;
+
+            h6 {
+                font-weight: 400;
+                font-size: 12px;
+                color: oklch(0.707 0.022 261.325);
+            }
+
+            h4 {
+                font-weight: 700;
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:640px) and (max-width:1023px) {
+    .header-content {
+
+        h1 {
+            font-weight: 700;
+            font-size: 45px;
+            font-family: "Days One", sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+        }
+
+        button {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 50px;
+            /* width: 100%; */
+        }
+
+        .btn1 {
+            margin-left: 65px;
+        }
+
+    }
+
+    .header-img {
+        margin-left: 15px;
+        height: 400px;
+        width: 600px;
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            border: 5px solid #CBFE1C;
+        }
+
+        .hero-img-span {
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            background-color: #0B0E13;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            text-align: left;
+            bottom: -30px;
+            left: -30px;
+        }
+
+        .hero-img-span-h {
+            margin-left: 10px;
+
+            h6 {
+                font-weight: 400;
+                font-size: 12px;
+                color: oklch(0.707 0.022 261.325);
+            }
+
+            h4 {
+                font-weight: 700;
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+
+}
 
 
 
@@ -211,10 +361,7 @@ span {
 
 
 
-
-
-
-@media screen and (min-width:992px) {
+@media screen and (min-width:1024px) {
     .container-fluid {
         width: 80%;
         margin: auto;
@@ -245,7 +392,8 @@ span {
 
     .nav-ul {
         border-bottom: 0px solid rgba(181, 179, 179, 0.842);
-        margin-top: 15px;
+        /* margin-top: 17px; */
+        /* padding-top: 10px; */
 
     }
 
@@ -257,100 +405,162 @@ span {
     }
 
     #footer {
-    background-color: #0B0E13; 
-    margin-top: 100px;
-}
+        background-color: #0B0E13;
+        margin-top: 100px;
+    }
 
-#footer .container {
-    padding-block: 70px;
-    margin: auto;
-    width: 90%;
-}
+    #footer .container {
+        padding-block: 70px;
+        margin: auto;
+        width: 90%;
+    }
 
-.f {
-    float: left;
-}
+    .f {
+        float: left;
+    }
 
-.footer-info {
-    width: 25%;
-    text-align: left;
-    padding-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 15px;
-}
+    .footer-info {
+        width: 25%;
+        text-align: left;
+        padding-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
 
-.footer-info .name-f {
+    .footer-info .name-f {
 
-    font-weight: 700;
-    font-size: 20px;
-}
+        font-weight: 700;
+        font-size: 20px;
+    }
 
-.footer-info p {
-    font-weight: 400;
-    font-size: 16px;
-    color: oklch(0.707 0.022 261.325);
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
+    .footer-info p {
+        font-weight: 400;
+        font-size: 16px;
+        color: oklch(0.707 0.022 261.325);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 
-.social {
-    margin-right: 10px;
-}
+    .social {
+        margin-right: 10px;
+    }
 
-.quick-links {
-    width: 20%;
-    padding-left: 20px;
-    margin-left: 15px;
-}
+    .quick-links {
+        width: 20%;
+        padding-left: 20px;
+        margin-left: 15px;
+    }
 
-.quick-links h3 {
-    color: white;
-    padding-bottom: 20px;
-    font-weight: 700;
-    font-size: 20px;
-}
+    .quick-links h3 {
+        color: white;
+        padding-bottom: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
 
-.quick-links a {
-    color: gray;
-    text-decoration: none;
-    padding-bottom: 20px;
-    display: block;
-    font-weight: 400;
-    font-size: 16px;
-}
+    .quick-links a {
+        color: gray;
+        text-decoration: none;
+        padding-bottom: 20px;
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+    }
 
-.quick-links a:hover {
-    color: #CBFE1C;
-}
+    .quick-links a:hover {
+        color: #CBFE1C;
+    }
 
-.copy {
-    float: left;
-    display: inline;
-    margin-top: 30px;
-    font-weight: 400;
-    font-size: 16px;
-    color: oklch(0.707 0.022 261.325);
-}
-.footer-copyrights {
-    border-top: 1px solid gainsboro;
-    width: 95%;
-    padding-bottom: 20px;
-}
+    .copy {
+        float: left;
+        display: inline;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        color: oklch(0.707 0.022 261.325);
+    }
 
-.footer-copyrights ul {
-    display: flex;
-    flex-direction: row;
-    color: oklch(0.707 0.022 261.325);
-    float: right;
-    list-style-type: none;
-    margin-top: 30px;
-}
+    .footer-copyrights {
+        border-top: 1px solid gainsboro;
+        width: 95%;
+        padding-bottom: 20px;
+    }
 
-.footer-copyrights a {
-    font-weight: 400;
-    font-size: 16px;
-    color: oklch(0.707 0.022 261.325);
-    margin-right: 10px;
-    text-decoration: none;
-}
+    .footer-copyrights ul {
+        display: flex;
+        flex-direction: row;
+        color: oklch(0.707 0.022 261.325);
+        float: right;
+        list-style-type: none;
+        margin-top: 30px;
+    }
+
+    .footer-copyrights a {
+        font-weight: 400;
+        font-size: 16px;
+        color: oklch(0.707 0.022 261.325);
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    .header-content {
+        h1 {
+            font-weight: 700;
+            font-size: 60px;
+            font-family: "Days One", sans-serif;
+            color: white;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            color: white;
+        }
+
+        button {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+    }
+
+    .header-img {
+        height: 400px;
+        width: 600px;
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            border: 5px solid #CBFE1C;
+        }
+
+        .hero-img-span {
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            background-color: #0B0E13;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            text-align: left;
+            bottom: -30px;
+            left: -30px;
+        }
+
+        .hero-img-span-h {
+            margin-left: 10px;
+
+            h6 {
+                font-weight: 400;
+                font-size: 12px;
+                color: oklch(0.707 0.022 261.325);
+            }
+
+            h4 {
+                font-weight: 700;
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
 }
