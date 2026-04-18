@@ -14,11 +14,16 @@ h6 {
     margin: 0;
 }
 
+img {
+    width: 100%;
+}
+
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.888), rgba(0, 0, 0, 0.888)), url("imgs/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .common-header {
@@ -70,6 +75,14 @@ h6 {
 /* ---------------------------------------nav css------------------------------------------ */
 nav {
     background-color: #0B0E13;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+
 }
 
 .name {
@@ -160,7 +173,7 @@ span {
 /* ---------------------------------------footer css------------------------------------------ */
 #footer {
     background-color: #0B0E13;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 #footer .container {
@@ -317,9 +330,10 @@ span {
 }
 
 /* ---------------------------------------what we do css------------------------------------------ */
-.whatWe-do{
+.whatWe-do {
     background-color: #0B0E13;
 }
+
 .whatWeDo-content {
     width: 300px;
     height: 300px;
@@ -337,7 +351,7 @@ span {
     border: #1E2939 1px solid;
 }
 
- .c1::before {
+.c1::before {
     content: "";
     width: 20px;
     height: 20px;
@@ -365,14 +379,16 @@ span {
 
 .c1:hover {
     border: #CBFE1C 2px solid;
-   
+
 }
-.c1:hover::before{
+
+.c1:hover::before {
     top: 10px;
     left: 10px;
     visibility: visible;
 }
-.c1:hover::after{
+
+.c1:hover::after {
     bottom: 10px;
     right: 10px;
     visibility: visible;
@@ -389,24 +405,183 @@ span {
     background-color: #CBFE1C;
     color: #1e2939;
 }
-.body::after{
-     content: "";
-    width: 700px;
+
+.body::after {
+    content: "";
+    width: 50%;
     height: 3px;
     position: absolute;
     bottom: -60px;
     right: 25%;
     display: block;
     box-shadow: 0px 0px 30px 1px #CBFE1C;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, #CBFE1C 50%, rgba(0, 0, 0, 1) 100%);
-    
-    
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #CBFE1C 50%, rgba(0, 0, 0, 1) 100%);
+
+
+}
+
+/* ---------------------------------------members css------------------------------------------ */
+.our-members {
+    background-color: #0B0E13;
+}
+.members-content {
+    width: 284px;
+    height: 320px;
+    border-radius: 10px;
+
+    .m-content {
+        top: 70%;
+
+        h1 {
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            font-family: "Days One", sans-serif;
+        }
+
+        h2 {
+            color: #cccccc;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        h3 {
+            color: oklch(0.707 0.022 261.325);
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+
+    p {
+        position: absolute;
+        right: -5px;
+        top: 80%;
+        transform: rotate(90deg);
+        color: #cccccc;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .mm {
+        top: 75%;
+    }
+}
+
+.members-content img {
+    border-radius: 10px;
+}
+
+.m1 {
+    background-image: url("imgs/avatar-1.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.m::before {
+    content: "";
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0px) grayscale(100%) brightness(130%);
+    transition: all 0.8s;
+}
+
+.m:hover::before {
+    top: -100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0px) grayscale(0%);
+}
+
+.m:hover {
+    h2 {
+        color: #CBFE1C;
+    }
+
+    p {
+        color: #CBFE1C;
+    }
+}
+
+.m2 {
+    background-image: url("imgs/avatar-2.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.m3 {
+    background-image: url("imgs/avatar-3.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.m4 {
+    background-image: url("imgs/avatar-4.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.m5 {
+    background-image: url("imgs/avatar-5.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.m6 {
+    background-image: url("imgs/avatar-6.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.m7 {
+    background-image: url("imgs/avatar-7.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.m8 {
+    background-image: url("imgs/avatar-8.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 
 
-/* ---------------------------------------header css------------------------------------------ */
-@media screen and (max-width:639px) {
 
+
+/* ---------------------------------------header css------------------------------------------ */
+@media screen and (max-width:640px) {
+    .members-content {
+        width: 100%;
+        /* height: 300px; */
+        border-radius: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    .members-content img {
+        width: 100%;
+        height: 100%;
+    }
 
     .header-content {
         h1 {
@@ -484,12 +659,27 @@ span {
     }
 
 
+
+
 }
 
 
 
 
 @media screen and (min-width:640px) and (max-width:1023px) {
+    .members-content {
+        width: 100%;
+        /* height: 300px; */
+        border-radius: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    .members-content img {
+        width: 100%;
+        height: 100%;
+    }
+
     .header-content {
 
         h1 {
@@ -562,6 +752,7 @@ span {
     }
 
 
+
 }
 
 
@@ -613,7 +804,7 @@ span {
 
     #footer {
         background-color: #0B0E13;
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
 
     #footer .container {
