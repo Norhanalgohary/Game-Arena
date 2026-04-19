@@ -18,12 +18,13 @@ img {
     width: 100%;
 }
 
-.header {
+.home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.888), rgba(0, 0, 0, 0.888)), url("imgs/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
+    /* margin-top: 20px; */
 }
 
 .common-header {
@@ -328,7 +329,94 @@ span {
 
 
 }
+/* ---------------------------------------latest  css------------------------------------------ */
+.latest-games{
+    background-color: #0B0E13;
+    height: 100vh;
+    .games{
+      width: 400px;
+      height: 290px;
+     
+      border-radius: 10px;
+    }
+    .games img{
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+          
+    }
+    .games-desc{
+        top: 0px;
+        visibility: hidden;
+        transition: all 0.1s;
+    }
+    .games-type{
+        margin-left: 10px;
+        font-weight: 700;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 5px;
+        color: white;
+        background-color: #1e293996;
+    }
+    .game-name{
+        font-weight: 700;
+        font-size: 18px;
+        color: rgb(11, 14, 19);
+        position: absolute;
+        bottom: 0px;
+        margin-left: 15px;
+        visibility: hidden;
+        transition: all 0.1s;
+    }
+    .games:hover{
+        border: 2px solid #CBFE1C;
+        /* background-image: linear-gradient(90deg, #CBFE1C 30%, rgba(89, 216, 87, 0.568)); */
+       transform: scale(1.1);
+       overflow: hidden;
+       .games-desc{
+        visibility: visible;
+        top: 15px;
+       
+       }
+       .game-name{
+        visibility: visible;
+        bottom: 5px;
+       }
+       .games:hover::before{
+        visibility: visible;
+    }
+    }
+.carousel-indicators [data-bs-target] {
+    width: 50px;
+    height: 50px;
+     border-radius:50% ;
+     text-indent: 0;
+     background-color: transparent;
+     border: 2px solid  #929292;
+     color: #929292;
+}
+.carousel3{
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #CBFE1C;
+    background-color: transparent;
+    border: 2px solid  #CBFE1C;
+}
+.carousel3:hover{
+     color: black;
+    background-color: #CBFE1C;
 
+}
+.c2{
+   opacity: 0.5;
+}
+}
 /* ---------------------------------------what we do css------------------------------------------ */
 .whatWe-do {
     background-color: #0B0E13;
@@ -419,7 +507,73 @@ span {
 
 
 }
+/* ---------------------------------------scroll css------------------------------------------ */
+.spinner{
+     background-color: #0B0E13;
+     
+}
+/* .spinner .container{
+    width: 95%;
+    margin: auto;
+} */
+.spin{
+    width: 90%;
+   margin: auto;
+    overflow: hidden;
+     /* height: 300px;
+  width: 600px; */
+  /* background-color: red; For browsers that do not support gradients */
+  /* background-image: radial-gradient( yellow, black); */
+}
+/* .sss{
+    
+  width: 800px;
+  margin: auto;
+  height: 400px;
+   top: 0;
+   bottom: 0;
 
+  background: radial-gradient(ellipse at center, #CBFE1C 0%, #CBFE1C 2%, transparent 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+
+z-index: 100;
+  
+} */
+
+.s1{
+    width: 100px !important;
+    height: 100px !important;
+}
+.s1 img{
+    border-radius: 10px;
+}
+
+@keyframes slideRightAnimation {
+  from{translate: 0;}
+  to {translate: -100%;}
+}
+@keyframes slideleftAnimation {
+  from{translate: -100%;}
+  to {translate: 0%;}
+}
+.group {
+    
+  animation-name: slideRightAnimation;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  
+}
+.group2 {
+    
+  animation-name: slideleftAnimation;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+ 
+}
 /* ---------------------------------------members css------------------------------------------ */
 .our-members {
     background-color: #0B0E13;
@@ -570,6 +724,9 @@ span {
 
 /* ---------------------------------------header css------------------------------------------ */
 @media screen and (max-width:640px) {
+    /* .carouse{
+        margin-block: 50px;
+    } */
     .members-content {
         width: 100%;
         /* height: 300px; */
@@ -584,6 +741,7 @@ span {
     }
 
     .header-content {
+        
         h1 {
             font-weight: 700;
             font-size: 45px;
@@ -619,9 +777,8 @@ span {
 
     .header-img {
         margin-left: 0;
-        height: 400px;
+        height: 200px;
         width: 600px;
-
         img {
             border-radius: 10px;
             width: 100%;
